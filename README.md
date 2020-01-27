@@ -8,7 +8,7 @@ This report describes and analyzes a procedure for automatically detecting the n
 
 - Input - a list of the plant root cell microscopies
 
-   ![Screen Shot 2018-03-22 at 4.44.09 am](./pic/Screen Shot 2018-03-22 at 4.44.09 am.png)
+   ![Screen Shot 2018-03-22 at 4.44.09 am](./pic/1.png)
 
 - Output - print each cell nuclei number of each image
 
@@ -156,7 +156,7 @@ Use filters to reduce noise on the image by using `fspecial`  and `spfilt` funct
 
 - `fspecial` creates Gaussian filters using follow formulas.
 
-  ![Screen Shot 2018-03-22 at 6.47.02 am](./pic/Screen Shot 2018-03-22 at 6.47.02 am.png)
+  ![Screen Shot 2018-03-22 at 6.47.02 am](./pic/21.png)
 
 - `spfilt` creates Contraharmonic Mean filters using following code.
 
@@ -279,13 +279,13 @@ Count the number of  8-connected objects using the `bwlabel` function with binar
 
 ## Read image
 
-![Screen Shot 2018-03-22 at 7.31.17 am](./pic/Screen Shot 2018-03-22 at 7.31.17 am.png)
+![Screen Shot 2018-03-22 at 7.31.17 am](./pic/2.png)
 
 
 
 ### Divide image
 
-![Screen Shot 2018-03-22 at 7.30.11 am](./pic/Screen Shot 2018-03-22 at 7.30.11 am.png)
+![Screen Shot 2018-03-22 at 7.30.11 am](./pic/3.png)
 
 
 
@@ -293,15 +293,15 @@ Count the number of  8-connected objects using the `bwlabel` function with binar
 
 - image1
 
-![Screen Shot 2018-03-22 at 7.35.45 am](./pic/Screen Shot 2018-03-22 at 7.35.45 am.png)
+![Screen Shot 2018-03-22 at 7.35.45 am](./pic/4.png)
 
 - image2
 
-![Screen Shot 2018-03-22 at 7.38.56 am](./pic/Screen Shot 2018-03-22 at 7.38.56 am.png)
+![Screen Shot 2018-03-22 at 7.38.56 am](./pic/5.png)
 
 - image3
 
-![Screen Shot 2018-03-22 at 7.40.40 am](./pic/Screen Shot 2018-03-22 at 7.40.40 am.png)
+![Screen Shot 2018-03-22 at 7.40.40 am](./pic/6.png)
 
 
 
@@ -309,15 +309,15 @@ Count the number of  8-connected objects using the `bwlabel` function with binar
 
 - image1
 
-![Screen Shot 2018-03-22 at 7.42.06 am](./pic/Screen Shot 2018-03-22 at 7.42.06 am.png)
+![Screen Shot 2018-03-22 at 7.42.06 am](./pic/7.png)
 
 - image2
 
-![Screen Shot 2018-03-22 at 7.42.51 am](./pic/Screen Shot 2018-03-22 at 7.42.51 am.png)
+![Screen Shot 2018-03-22 at 7.42.51 am](./pic/8.png)
 
 - image3
 
-![Screen Shot 2018-03-22 at 7.43.57 am](./pic/Screen Shot 2018-03-22 at 7.43.57 am.png)
+![Screen Shot 2018-03-22 at 7.43.57 am](./pic/9.png)
 
 
 
@@ -325,15 +325,15 @@ Count the number of  8-connected objects using the `bwlabel` function with binar
 
 - image1
 
-![Screen Shot 2018-03-22 at 7.46.37 am](./pic/Screen Shot 2018-03-22 at 7.46.37 am.png)
+![Screen Shot 2018-03-22 at 7.46.37 am](./pic/10.png)
 
 - image2
 
-![Screen Shot 2018-03-22 at 7.47.38 am](./pic/Screen Shot 2018-03-22 at 7.47.38 am.png)
+![Screen Shot 2018-03-22 at 7.47.38 am](./pic/11.png)
 
 - image3
 
-![Screen Shot 2018-03-22 at 7.48.40 am](./pic/Screen Shot 2018-03-22 at 7.48.40 am.png)
+![Screen Shot 2018-03-22 at 7.48.40 am](./pic/12.png)
 
 
 
@@ -341,15 +341,15 @@ Count the number of  8-connected objects using the `bwlabel` function with binar
 
 - image1
 
-![Screen Shot 2018-03-22 at 7.49.44 am](./pic/Screen Shot 2018-03-22 at 7.49.44 am.png)
+![Screen Shot 2018-03-22 at 7.49.44 am](./pic/13.png)
 
 - image2
 
-![Screen Shot 2018-03-22 at 7.50.35 am](./pic/Screen Shot 2018-03-22 at 7.50.35 am.png)
+![Screen Shot 2018-03-22 at 7.50.35 am](./pic/14.png)
 
 - image3
 
-![Screen Shot 2018-03-22 at 7.51.19 am](./pic/Screen Shot 2018-03-22 at 7.51.19 am.png)
+![Screen Shot 2018-03-22 at 7.51.19 am](./pic/15.png)
 
 
 
@@ -398,11 +398,11 @@ By studying the histograms of the two graphs, it is found that the black backgro
 
 So, use `img = imcrop(img);` to select the process area.  
 
-![Screen Shot 2018-03-21 at 7.26.51 pm](./pic/Screen Shot 2018-03-21 at 7.26.51 pm.png)
+![Screen Shot 2018-03-21 at 7.26.51 pm](./pic/16.png)
 
 The following four graphs show changes in the histogram equalization before and after the process zone selection. 
 
-![Screen Shot 2018-03-22 at 10.46.50 am](./pic/Screen Shot 2018-03-22 at 10.46.50 am.png)
+![Screen Shot 2018-03-22 at 10.46.50 am](./pic/22.png)
 
 Obviously, after removing the black background that does not need to be studied, after using the histogram equalization, the improvement effect of the image is significant. 
 
@@ -414,7 +414,7 @@ However, manual selection is not a good solution for a program. With the idea of
 
 The use of the technique of contrast stretching can highlight the structure of the cell and highlight the nucleus to be sought. This can be intuitively felt from the comparison of this picture below.
 
-![Screen Shot 2018-03-22 at 7.35.45 am](./pic/Screen Shot 2018-03-22 at 7.35.45 am.png)
+![Screen Shot 2018-03-22 at 7.35.45 am](./pic/4.png)
 
 The final version of the code abandons the histogram equalization method because it is too susceptible to the overall image. If the program just highlights the object structure in the image, using contrast stretching is more appropriate.
 
@@ -424,7 +424,7 @@ The final version of the code abandons the histogram equalization method because
 
 After using the “contrast stretching” method, the image is prone to a large amount of noise, which is most evident in the second and third images.
 
-![Screen Shot 2018-03-22 at 11.23.07 am](./pic/Screen Shot 2018-03-22 at 11.23.07 am.png)
+![Screen Shot 2018-03-22 at 11.23.07 am](./pic/17.png)
 
 As can be seen from the picture, this is obviously salt and pepper noise, and the program needs to use something like a median filter to process the image.
 
@@ -434,7 +434,7 @@ As can be seen from the picture, this is obviously salt and pepper noise, and th
 
 Use thresholding to identify the cell nuclei. 
 
-![Screen Shot 2018-03-22 at 7.46.37 am](./pic/Screen Shot 2018-03-22 at 7.46.37 am.png)
+![Screen Shot 2018-03-22 at 7.46.37 am](./pic/12.png)
 
 
 
@@ -442,7 +442,7 @@ Use thresholding to identify the cell nuclei.
 
 By using erosion operation, some of the white dots of the connected cells are separated, improving the accuracy of the counting the number.
 
-![Screen Shot 2018-03-22 at 12.09.30 pm](./pic/Screen Shot 2018-03-22 at 12.09.30 pm.png)
+![Screen Shot 2018-03-22 at 12.09.30 pm](./pic/18.png)
 
 
 
@@ -468,7 +468,7 @@ By using erosion operation, some of the white dots of the connected cells are se
 
 - This version of the code does the same thing for each unit and does not consider the differences in each block. This will make some forms of segmentation cause less than ideal results.
 
-![Screen Shot 2018-03-22 at 12.36.04 pm](./pic/Screen Shot 2018-03-22 at 12.36.04 pm.png)
+![Screen Shot 2018-03-22 at 12.36.04 pm](./pic/19.png)
 
 
 
@@ -478,13 +478,11 @@ By using erosion operation, some of the white dots of the connected cells are se
 
 - Highlight the structure of the cell and highlight the nucleus to be sought
 
-![Screen Shot 2018-03-22 at 7.35.45 am](./pic/Screen Shot 2018-03-22 at 7.35.45 am.png)
+![Screen Shot 2018-03-22 at 7.35.45 am](./pic/4.png)
 
 **Weaknesses**
 
 - The image is prone to a large amount of noise, which is most evident in the second and third images.
-
-![Screen Shot 2018-03-22 at 11.23.07 am](./pic/Screen Shot 2018-03-22 at 11.23.07 am.png)
 
 
 
@@ -494,7 +492,7 @@ By using erosion operation, some of the white dots of the connected cells are se
 
 - Reduce salt and pepper noise by using the filter.
 
-![Screen Shot 2018-03-22 at 7.43.57 am](./pic/Screen Shot 2018-03-22 at 7.43.57 am.png)
+![Screen Shot 2018-03-22 at 7.43.57 am](./pic/9.png)
 
 **Weaknesses**
 
@@ -508,11 +506,9 @@ By using erosion operation, some of the white dots of the connected cells are se
 
 - some of the white dots of the connected cells are separated, improving the accuracy of the counting the number
 
-![Screen Shot 2018-03-22 at 12.09.30 pm](./pic/Screen Shot 2018-03-22 at 12.09.30 pm.png)
-
 **Weaknesses**
 
 - In the middle of the image, the Erosion does not break off the points where there has many connections between points.
 
-![Screen Shot 2018-03-22 at 1.06.02 pm](./pic/Screen Shot 2018-03-22 at 1.06.02 pm.png)
+![Screen Shot 2018-03-22 at 1.06.02 pm](./pic/20.png)
 
